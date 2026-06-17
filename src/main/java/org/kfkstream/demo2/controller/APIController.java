@@ -34,6 +34,8 @@ public class APIController {
     public List<Data> getData(){
         log.info("tetsing code");
 
+
+
         return dataDao.getData().stream().sorted(Comparator.comparing(Data::getPrice)).collect(Collectors.toList());
     }
 }
